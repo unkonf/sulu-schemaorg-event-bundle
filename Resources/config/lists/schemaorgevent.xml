@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<list xmlns="http://schemas.sulu.io/list-builder/list">
+    <key>schemaorgevent</key>
+
+    <properties>
+        <property name="id" visibility="no" translation="sulu_admin.id">
+            <field-name>id</field-name>
+            <entity-name>UnKonf\Sulu\SchemaOrgEventBundle\Entity\Event</entity-name>
+        </property>
+
+        <property name="name" visibility="always" searchability="yes" translation="schemaorgevent.name">
+            <field-name>name</field-name>
+            <entity-name>UnKonf\Sulu\SchemaOrgEventBundle\Entity\Event</entity-name>
+        </property>
+
+        <property name="startDate" visibility="always" translation="schemaorgevent.startDate">
+            <field-name>startDate</field-name>
+            <entity-name>UnKonf\Sulu\SchemaOrgEventBundle\Entity\Event</entity-name>
+        </property>
+
+        <property name="endDate" visibility="always" translation="schemaorgevent.endDate">
+            <field-name>endDate</field-name>
+            <entity-name>UnKonf\Sulu\SchemaOrgEventBundle\Entity\Event</entity-name>
+        </property>
+
+        <property name="location_name" visibility="always" searchability="yes" translation="schemaorgevent.location.name">
+            <field-name>location.name</field-name>
+            <entity-name>UnKonf\Sulu\SchemaOrgEventBundle\Entity\Event</entity-name>
+        </property>
+
+        <property name="offer_name" visibility="always" searchability="yes" translation="schemaorgevent.offer.name">
+            <field-name>offer.name</field-name>
+            <entity-name>UnKonf\Sulu\SchemaOrgEventBundle\Entity\Event</entity-name>
+        </property>
+
+        <property name="offer_price" visibility="always" translation="schemaorgevent.offer.price">
+            <field-name>offer.price</field-name>
+            <entity-name>UnKonf\Sulu\SchemaOrgEventBundle\Entity\Event</entity-name>
+        </property>
+
+        <property name="offer_currency" visibility="always" translation="schemaorgevent.offer.currency">
+            <field-name>offer.currency</field-name>
+            <entity-name>UnKonf\Sulu\SchemaOrgEventBundle\Entity\Event</entity-name>
+        </property>
+
+        <property name="offer_validFrom" visibility="always" translation="schemaorgevent.offer.validFrom">
+            <field-name>offer.validFrom</field-name>
+            <entity-name>UnKonf\Sulu\SchemaOrgEventBundle\Entity\Event</entity-name>
+        </property>
+    </properties>
+</list>

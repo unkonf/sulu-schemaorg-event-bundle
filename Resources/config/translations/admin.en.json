@@ -1,0 +1,17 @@
+{
+  "schemaorgevent.title": "Schema.org Event",
+  "schemaorgevent.webspace_key": "Webspace",
+  "schemaorgevent.name": "Event Name",
+  "schemaorgevent.startDate": "Event Start Date",
+  "schemaorgevent.endDate": "Event End Date",
+  "schemaorgevent.location.name": "Location Name",
+  "schemaorgevent.location.street": "Location Street",
+  "schemaorgevent.location.zipCode": "Location Zip code",
+  "schemaorgevent.location.city": "Location City",
+  "schemaorgevent.location.country": "Location Country",
+  "schemaorgevent.offer.name": "Offer Name",
+  "schemaorgevent.offer.price": "Offer Price",
+  "schemaorgevent.offer.currency": "Offer Currency",
+  "schemaorgevent.offer.validFrom": "Offer Valid From",
+  "schemaorgevent.offer.url": "Offer URL"
+}
