@@ -14,3 +14,7 @@ services:
     UnKonf\Sulu\SchemaOrgEventBundle\Controller\Admin\:
         resource: '../../Controller/Admin'
         tags: ['controller.service_arguments', {name: 'sulu.context', context: 'admin'}]
+
+    UnKonf\Sulu\SchemaOrgEventBundle\Twig\:
+        resource: '../../Twig'
+        tags: ['twig.extension']
