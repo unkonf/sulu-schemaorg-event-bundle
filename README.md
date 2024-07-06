@@ -1,36 +1,29 @@
-# sulu-securitytxt-bundle
+# sulu-schemaorg-event-bundle
 
 [![Mastodon Follow](https://img.shields.io/mastodon/follow/109408681246972700?domain=https://rheinneckar.social)](https://rheinneckar.social/@bitexpert)
+[![Mastodon Follow](https://img.shields.io/mastodon/follow/109408728315328967?domain=https://rheinneckar.social)](https://rheinneckar.social/@unKonf)
 
-This is a Sulu Bundle to manage security.txt files for your Sulu webspaces.
-
-According to [securitytxt.org](https://securitytxt.org) the main purpose of security.txt is to help make things easier for companies and security researchers when trying to secure platforms. Thanks to security.txt, security researchers can easily get in touch with companies about security issues.
+This is a Sulu bundle to manage Schema.org Event metadata for your Sulu webspaces.
 
 ## Installation
 
 ```bash
-composer require bitexpert/sulu-securitytxt-bundle
+composer require unkonf/sulu-schemaorg-event-bundle
 ```
 
 1. Register the bundle in the file `config/bundles.php`
 ```php
-BitExpert\Sulu\SecuritytxtBundle\BitExpertSuluSecuritytxtBundle::class => ['all' => true],
+UnKonf\Sulu\SchemaOrgEventBundle\UnKonfSuluSchemaOrgEventBundle::class => ['all' => true],
 ```
 
 2. Configure the routing as follows:
 
-Create file `config/routes/securitytxt_admin.yaml`:
+Create file `config/routes/schemaorgevent_admin.yaml`:
 ```yaml
-securitytxt_api:
-    resource: "@BitExpertSuluSecuritytxtBundle/Resources/config/routing_api.yaml"
-    type: rest
-    prefix:   /admin/api
-```
-
-Create file `config/routes/securitytxt_website.yaml`:
-```yaml
-securitytxt_website:
-  resource: "@BitExpertSuluSecuritytxtBundle/Resources/config/routing_website.yaml"
+schemaorgevent_api:
+  resource: "@UnKonfSuluSchemaOrgEventBundle/Resources/config/routing_api.yaml"
+  type: rest
+  prefix:   /admin/api
 ```
 
 3. Run Doctrine Schema Update
@@ -40,10 +33,11 @@ securitytxt_website:
 
 ## Usage
 
-Once installed, this bundle adds a tab called "Security.txt" to the webspaces configuration which allows you to create
-new security.txt entries for the different webspaces. For each webspace only one security.txt configuration can be saved.
+Once installed, this bundle adds a tab called "Schema.org Event" to the webspaces configuration which allows you to create
+new schema.org Event entries for the different webspaces. For each webspace only one event configuration can be saved.
 
-Since 0.5.0: Only users with the Securitytxt permissions can view, add, edit or delete the security.txt entries.
+The tab is only visible once the user got the permissions assigned. Create a new role via "Settings > User role" first, 
+and assign it to the users that should be able to manage the settings.
 
 ## Contribute
 
@@ -57,4 +51,4 @@ Check out [the contributing guide](CONTRIBUTING.md) to find out how, as well as 
 
 ## License
 
-Sulu Security.txt Bundle is released under the MIT License.
+Sulu Schema.org Event Bundle is released under the MIT License.
