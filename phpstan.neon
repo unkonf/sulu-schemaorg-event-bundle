@@ -1,5 +1,6 @@
 parameters:
     level: 8
+    treatPhpDocTypesAsCertain: false
     fileExtensions:
         - php
     paths:
@@ -11,4 +12,6 @@ parameters:
         - Repository
         - Twig
     ignoreErrors:
-        - "#Casting to int something that\\'s already int.#"
+        -
+            message: "#::getSecurityContexts\\(\\) should return array#"
+            path: Admin/SchemaOrgEventAdmin.php

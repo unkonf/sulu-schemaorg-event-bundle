@@ -31,7 +31,7 @@ class SchemaOrgEventTwigExtension extends AbstractExtension
         ];
     }
 
-    public function loadEvent($webspaceKey = null)
+    public function loadEvent(string $webspaceKey = null): string
     {
         if ($webspaceKey === null) {
             $webspaceKey = $this->requestAnalyzer->getWebspace()->getKey();
@@ -95,7 +95,7 @@ class SchemaOrgEventTwigExtension extends AbstractExtension
             $schemaOrgEventContent['offers']['name'] = $event->getOffer()->getName();
         }
 
-        if ($event->getOffer()->getPrice() !== '') {
+        if ($event->getOffer()->getPrice() != '') {
             $schemaOrgEventContent['offers']['price'] = $event->getOffer()->getPrice();
         }
 

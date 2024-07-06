@@ -69,7 +69,7 @@ class SchemaOrgEventAdmin extends Admin
         }
     }
 
-    public function getSecurityContexts()
+    public function getSecurityContexts(): array
     {
         return [
             self::SYSTEM => [
