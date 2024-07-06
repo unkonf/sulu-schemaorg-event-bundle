@@ -18,66 +18,66 @@ use Doctrine\ORM\Mapping as ORM;
 class Location
 {
     #[ORM\Column(type: Types::STRING, length: 255, nullable: true)]
-    private string $name;
+    private ?string $name = null;
 
     #[ORM\Column(type: Types::STRING, length: 255, nullable: true)]
-    private string $street;
+    private ?string $street = null;
 
     #[ORM\Column(type: Types::STRING, length: 255, nullable: true)]
-    private string $zipCode;
+    private ?string $zipCode = null;
 
     #[ORM\Column(type: Types::STRING, length: 255, nullable: true)]
-    private string $city;
+    private ?string $city = null;
 
     #[ORM\Column(type: Types::STRING, length: 255, nullable: true)]
-    private string $country;
+    private ?string $country = null;
 
-    public function getName(): string
+    public function getName(): ?string
     {
         return $this->name;
     }
 
-    public function setName(string $name): void
+    public function setName(?string $name): void
     {
         $this->name = $name;
     }
 
-    public function getStreet(): string
+    public function getStreet(): ?string
     {
         return $this->street;
     }
 
-    public function setStreet(string $street): void
+    public function setStreet(?string $street): void
     {
         $this->street = $street;
     }
 
-    public function getZipCode(): string
+    public function getZipCode(): ?string
     {
         return $this->zipCode;
     }
 
-    public function setZipCode(string $zipCode): void
+    public function setZipCode(?string $zipCode): void
     {
         $this->zipCode = $zipCode;
     }
 
-    public function getCity(): string
+    public function getCity(): ?string
     {
         return $this->city;
     }
 
-    public function setCity(string $city): void
+    public function setCity(?string $city): void
     {
         $this->city = $city;
     }
 
-    public function getCountry(): string
+    public function getCountry(): ?string
     {
         return $this->country;
     }
 
-    public function setCountry(string $country): void
+    public function setCountry(?string $country): void
     {
         $this->country = $country;
     }

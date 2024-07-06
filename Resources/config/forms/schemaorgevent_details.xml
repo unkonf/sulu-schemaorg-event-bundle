@@ -5,28 +5,28 @@
     <key>schemaorgevent_details</key>
 
     <properties>
-        <property name="name" type="text_line" mandatory="true">
+        <property name="name" type="text_line">
             <meta>
                 <title>schemaorgevent.name</title>
                 <info_text lang="en">Name of the event</info_text>
             </meta>
         </property>
 
-        <property name="startDate" type="date" mandatory="true">
+        <property name="startDate" type="date">
             <meta>
                 <title>schemaorgevent.startDate</title>
                 <info_text lang="en">The date when the event starts.</info_text>
             </meta>
         </property>
 
-        <property name="endDate" type="date" mandatory="true">
+        <property name="endDate" type="date">
             <meta>
                 <title>schemaorgevent.endDate</title>
                 <info_text lang="en">The date when the ends.</info_text>
             </meta>
         </property>
 
-        <property name="location_name" type="text_line" mandatory="true">
+        <property name="location_name" type="text_line">
             <meta>
                 <title>schemaorgevent.location.name</title>
                 <info_text lang="en">The name of the location.</info_text>
@@ -61,42 +61,42 @@
             </meta>
         </property>
 
-        <property name="offer_name" type="text_line" mandatory="true">
+        <property name="offer_name" type="text_line">
             <meta>
                 <title>schemaorgevent.offer.name</title>
                 <info_text lang="en">The name of the offer.</info_text>
             </meta>
         </property>
 
-        <property name="offer_price" type="number" mandatory="true">
+        <property name="offer_price" type="number">
             <meta>
                 <title>schemaorgevent.offer.price</title>
                 <info_text lang="en">The price of the offer.</info_text>
             </meta>
         </property>
 
-        <property name="offer_currency" type="text_line" mandatory="true">
+        <property name="offer_currency" type="text_line">
             <meta>
                 <title>schemaorgevent.offer.currency</title>
                 <info_text lang="en">The currency of the offer.</info_text>
             </meta>
         </property>
 
-        <property name="offer_currency" type="text_line" mandatory="true">
+        <property name="offer_currency" type="text_line">
             <meta>
                 <title>schemaorgevent.offer.currency</title>
                 <info_text lang="en">The currency of the offer.</info_text>
             </meta>
         </property>
 
-        <property name="offer_validFrom" type="date" mandatory="true">
+        <property name="offer_validFrom" type="date">
             <meta>
                 <title>schemaorgevent.offer.validFrom</title>
                 <info_text lang="en">The date the offer is valid from.</info_text>
             </meta>
         </property>
 
-        <property name="offer_url" type="url" mandatory="true">
+        <property name="offer_url" type="url">
             <meta>
                 <title>schemaorgevent.offer.url</title>
                 <info_text lang="en">The url where to purchase the offer.</info_text>
