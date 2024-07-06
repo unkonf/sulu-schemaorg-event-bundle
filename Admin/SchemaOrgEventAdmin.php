@@ -26,7 +26,7 @@ class SchemaOrgEventAdmin extends Admin
     final public const SYSTEM = 'UnKonf';
     final public const SECURITY_CONTEXT = 'unkonf.schemaorgevent';
     final public const SCHEMAORGEVENT_LIST_KEY = 'schemaorgevent';
-    final public const SCHEMAORGEVENT_LIST_VIEW = 'app.schemaorgevent_list';
+    final public const SCHEMAORGEVENT_LIST_VIEW = 'unkonf.schemaorgevent_list';
 
     public function __construct(
         private readonly ViewBuilderFactoryInterface $viewBuilderFactory,

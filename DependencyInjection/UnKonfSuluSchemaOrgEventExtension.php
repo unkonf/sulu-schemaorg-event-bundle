@@ -38,8 +38,8 @@ class UnKonfSuluSchemaOrgEventExtension extends Extension implements PrependExte
                     'resources' => [
                         'schemaorgevent' => [
                             'routes' => [
-                                'list' => 'app.get_schemaorgevent_list',
-                                'detail' => 'app.get_schemaorgevent',
+                                'list' => 'unkonf.get_schemaorgevent_list',
+                                'detail' => 'unkonf.get_schemaorgevent',
                             ],
                         ],
                     ],
