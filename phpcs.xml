@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<ruleset name="Sulu Schema.org Event Bundle Coding Standard">
+    <!-- Standard to apply -->
+    <rule ref="PSR2"/>
+
+    <!-- Paths to check -->
+    <file>Admin</file>
+    <file>Common</file>
+    <file>Controller</file>
+    <file>DependencyInjection</file>
+    <file>Entity</file>
+    <file>Repository</file>
+    <file>Twig</file>
+</ruleset>

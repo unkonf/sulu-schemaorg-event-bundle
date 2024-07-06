@@ -1,0 +1,14 @@
+parameters:
+    level: 8
+    fileExtensions:
+        - php
+    paths:
+        - Admin
+        - Common
+        - Controller
+        - DependencyInjection
+        - Entity
+        - Repository
+        - Twig
+    ignoreErrors:
+        - "#Casting to int something that\\'s already int.#"
