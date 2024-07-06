@@ -26,81 +26,98 @@
             </meta>
         </property>
 
-        <property name="location_name" type="text_line">
+        <section name="location">
             <meta>
-                <title>schemaorgevent.location.name</title>
-                <info_text lang="en">The name of the location.</info_text>
+                <title lang="en">Location information</title>
             </meta>
-        </property>
 
-        <property name="location_street" type="text_line">
-            <meta>
-                <title>schemaorgevent.location.street</title>
-                <info_text lang="en">The location address street.</info_text>
-            </meta>
-        </property>
+            <properties>
+                <property name="location_name" type="text_line">
+                    <meta>
+                        <title>schemaorgevent.location.name</title>
+                        <info_text lang="en">The name of the location.</info_text>
+                    </meta>
+                </property>
 
-        <property name="location_zipCode" type="text_line">
-            <meta>
-                <title>schemaorgevent.location.zipCode</title>
-                <info_text lang="en">The location address zip code.</info_text>
-            </meta>
-        </property>
+                <property name="location_street" type="text_line">
+                    <meta>
+                        <title>schemaorgevent.location.street</title>
+                        <info_text lang="en">The location address street.</info_text>
+                    </meta>
+                </property>
 
-        <property name="location_city" type="text_line">
-            <meta>
-                <title>schemaorgevent.location.city</title>
-                <info_text lang="en">The location address city.</info_text>
-            </meta>
-        </property>
+                <property name="location_zipCode" type="text_line">
+                    <meta>
+                        <title>schemaorgevent.location.zipCode</title>
+                        <info_text lang="en">The location address zip code.</info_text>
+                    </meta>
+                </property>
 
-        <property name="location_country" type="text_line">
-            <meta>
-                <title>schemaorgevent.location.country</title>
-                <info_text lang="en">The location address country code.</info_text>
-            </meta>
-        </property>
+                <property name="location_city" type="text_line">
+                    <meta>
+                        <title>schemaorgevent.location.city</title>
+                        <info_text lang="en">The location address city.</info_text>
+                    </meta>
+                </property>
 
-        <property name="offer_name" type="text_line">
-            <meta>
-                <title>schemaorgevent.offer.name</title>
-                <info_text lang="en">The name of the offer.</info_text>
-            </meta>
-        </property>
+                <property name="location_country" type="text_line">
+                    <meta>
+                        <title>schemaorgevent.location.country</title>
+                        <info_text lang="en">The location address country code.</info_text>
+                    </meta>
+                </property>
+            </properties>
+        </section>
 
-        <property name="offer_price" type="number">
-            <meta>
-                <title>schemaorgevent.offer.price</title>
-                <info_text lang="en">The price of the offer.</info_text>
-            </meta>
-        </property>
 
-        <property name="offer_currency" type="text_line">
+        <section name="offer">
             <meta>
-                <title>schemaorgevent.offer.currency</title>
-                <info_text lang="en">The currency of the offer.</info_text>
+                <title lang="en">Offer information</title>
             </meta>
-        </property>
 
-        <property name="offer_currency" type="text_line">
-            <meta>
-                <title>schemaorgevent.offer.currency</title>
-                <info_text lang="en">The currency of the offer.</info_text>
-            </meta>
-        </property>
+            <properties>
+                <property name="offer_name" type="text_line">
+                    <meta>
+                        <title>schemaorgevent.offer.name</title>
+                        <info_text lang="en">The name of the offer.</info_text>
+                    </meta>
+                </property>
 
-        <property name="offer_validFrom" type="date">
-            <meta>
-                <title>schemaorgevent.offer.validFrom</title>
-                <info_text lang="en">The date the offer is valid from.</info_text>
-            </meta>
-        </property>
+                <property name="offer_price" type="number">
+                    <meta>
+                        <title>schemaorgevent.offer.price</title>
+                        <info_text lang="en">The price of the offer.</info_text>
+                    </meta>
+                </property>
 
-        <property name="offer_url" type="url">
-            <meta>
-                <title>schemaorgevent.offer.url</title>
-                <info_text lang="en">The url where to purchase the offer.</info_text>
-            </meta>
-        </property>
+                <property name="offer_currency" type="text_line">
+                    <meta>
+                        <title>schemaorgevent.offer.currency</title>
+                        <info_text lang="en">The currency of the offer.</info_text>
+                    </meta>
+                </property>
+
+                <property name="offer_currency" type="text_line">
+                    <meta>
+                        <title>schemaorgevent.offer.currency</title>
+                        <info_text lang="en">The currency of the offer.</info_text>
+                    </meta>
+                </property>
+
+                <property name="offer_validFrom" type="date">
+                    <meta>
+                        <title>schemaorgevent.offer.validFrom</title>
+                        <info_text lang="en">The date the offer is valid from.</info_text>
+                    </meta>
+                </property>
+
+                <property name="offer_url" type="url">
+                    <meta>
+                        <title>schemaorgevent.offer.url</title>
+                        <info_text lang="en">The url where to purchase the offer.</info_text>
+                    </meta>
+                </property>
+            </properties>
+        </section>
     </properties>
 </form>
