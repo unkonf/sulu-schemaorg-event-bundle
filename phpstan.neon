@@ -12,6 +12,3 @@ parameters:
         - Repository
         - Twig
     ignoreErrors:
-        -
-            message: "#::getSecurityContexts\\(\\) should return array#"
-            path: Admin/SchemaOrgEventAdmin.php
