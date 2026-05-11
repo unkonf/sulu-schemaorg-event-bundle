@@ -1,3 +1,5 @@
 controllers_admin:
   resource: '../../Controller/Admin'
-  type: annotation
+  type: attribute
+  options:
+    expose: true
