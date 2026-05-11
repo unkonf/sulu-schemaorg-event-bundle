@@ -22,8 +22,6 @@ Create file `config/routes/schemaorgevent_admin.yaml`:
 ```yaml
 schemaorgevent_api:
   resource: "@UnKonfSuluSchemaOrgEventBundle/Resources/config/routing_api.yaml"
-  type: rest
-  prefix:   /admin/api
 ```
 
 3. Run Doctrine Schema Update

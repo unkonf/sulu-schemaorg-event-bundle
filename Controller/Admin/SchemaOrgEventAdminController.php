@@ -20,7 +20,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
-use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Routing\Attribute\Route;
 
 /**
  * @phpstan-type SchemaOrgEventData array{
@@ -41,6 +41,7 @@ use Symfony\Component\Routing\Annotation\Route;
  *     offer_url: string|null,
  * }
  */
+#[Route('/admin/api')]
 class SchemaOrgEventAdminController extends AbstractController
 {
     public function __construct(
@@ -49,7 +50,7 @@ class SchemaOrgEventAdminController extends AbstractController
     ) {
     }
 
-    #[Route(path: 'schemaorgevent/{id}', name: 'unkonf.get_schemaorgevent', methods: ['GET'])]
+    #[Route(path: '/schemaorgevent/{id}', name: 'unkonf.get_schemaorgevent', methods: ['GET'])]
     public function getAction(int $id): Response
     {
         $entity = $this->repository->findById($id);
@@ -60,7 +61,7 @@ class SchemaOrgEventAdminController extends AbstractController
         return $this->json($this->getDataForEntity($entity));
     }
 
-    #[Route(path: 'schemaorgevent/{id}', name: 'unkonf.put_schemaorgevent', methods: ['PUT'])]
+    #[Route(path: '/schemaorgevent/{id}', name: 'unkonf.put_schemaorgevent', methods: ['PUT'])]
     public function putAction(int $id, Request $request): Response
     {
         $entity = $this->repository->findById($id);
@@ -77,7 +78,7 @@ class SchemaOrgEventAdminController extends AbstractController
         return $this->json($this->getDataForEntity($entity));
     }
 
-    #[Route(path: 'schemaorgevent', name: 'unkonf.post_schemaorgevent', methods: ['POST'])]
+    #[Route(path: '/schemaorgevent', name: 'unkonf.post_schemaorgevent', methods: ['POST'])]
     public function postAction(Request $request): Response
     {
         $entity = $this->repository->create();
@@ -92,7 +93,7 @@ class SchemaOrgEventAdminController extends AbstractController
         return $this->json($this->getDataForEntity($entity), 201);
     }
 
-    #[Route(path: 'schemaorgevent/{id}', name: 'unkonf.delete_schemaorgevent', methods: ['DELETE'])]
+    #[Route(path: '/schemaorgevent/{id}', name: 'unkonf.delete_schemaorgevent', methods: ['DELETE'])]
     public function deleteAction(int $id): Response
     {
         $this->repository->remove($id);
@@ -100,7 +101,7 @@ class SchemaOrgEventAdminController extends AbstractController
         return $this->json(null, 204);
     }
 
-    #[Route(path: 'schemaorgevent', name: 'unkonf.get_schemaorgevent_list', methods: ['GET'])]
+    #[Route(path: '/schemaorgevent', name: 'unkonf.get_schemaorgevent_list', methods: ['GET'])]
     public function getListAction(): Response
     {
         $listRepresentation = $this->doctrineListRepresentationFactory->createDoctrineListRepresentation(
