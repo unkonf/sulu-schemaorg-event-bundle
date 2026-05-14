@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file, in reverse chronological order by release.
 
+## 0.2.1
+
+### Added
+
+- Nothing.
+
+### Deprecated
+
+- Nothing.
+
+### Removed
+
+- Nothing.
+
+### Fixed
+
+- [#18](https://github.com/unkonf/sulu-schemaorg-event-bundle/pull/18) Use startDate and endDate data when generating the schema.org event info
+
 ## 0.2.0
 
 ### Added
