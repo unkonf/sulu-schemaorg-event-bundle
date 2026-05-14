@@ -64,11 +64,11 @@ class SchemaOrgEventTwigExtension extends AbstractExtension
         }
 
         if ($event->getStartDate() !== '') {
-            $schemaOrgEventContent['startDate'] = $event->getName();
+            $schemaOrgEventContent['startDate'] = $event->getStartDate();
         }
 
         if ($event->getEndDate() !== '') {
-            $schemaOrgEventContent['endDate'] = $event->getName();
+            $schemaOrgEventContent['endDate'] = $event->getEndDate();
         }
 
         if ($event->getLocation()->getName() !== '') {
