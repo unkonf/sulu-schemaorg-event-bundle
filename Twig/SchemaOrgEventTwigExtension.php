@@ -34,7 +34,12 @@ class SchemaOrgEventTwigExtension extends AbstractExtension
     public function loadEvent(?string $webspaceKey = null): string
     {
         if ($webspaceKey === null) {
-            $webspaceKey = $this->requestAnalyzer->getWebspace()->getKey();
+            $webspace = $this->requestAnalyzer->getWebspace();
+            if ($webspace === null) {
+                return '';
+            }
+
+            $webspaceKey = $webspace->getKey();
         }
 
         $event = $this->repository->findByWebspaceKey($webspaceKey);
